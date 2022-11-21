@@ -1,0 +1,27 @@
+/******************************************************/
+/* Web del romanticismo - hoja de estilo de poema   */
+/* Autor: Pablo García Muñoz                          */
+/* Version 1.0 - 7/11/2022                           */
+/******************************************************/
+
+/******************** estilo general ******************/
+
+@font-face{
+    font-family: escritura;
+    src: url("../fonts/I\ Love\ Glitter.ttf");
+}
+
+body{
+    font-family: escritura;
+    font-size: 1.8em;
+    background-image: url("../images/fondo.jpg");
+    background-repeat: repeat-y;
+    /*background-position: bottom right;*/
+    background-size: 15%;
+    background-color: #AEAA9E;
+
+}
+
+#wrapper{
+    margin-left: 20%;
+}

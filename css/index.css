@@ -1,0 +1,131 @@
+/******************************************************/
+/* Web del romanticismo - hoja de estilo de index     */
+/* Autor: Pablo García Muñoz                          */
+/* Version 1.0 - 10/11/2022                           */
+/******************************************************/
+
+/******************** estilo general ******************/
+@font-face {
+    font-family: titulos;
+    src: url('../fonts/AlexBrush-Regular.ttf');
+}
+
+@font-face {
+    font-family: texto;
+    src: url('../fonts/Kanit-Black.ttf');
+}
+
+body{
+    background-color: blue;
+    font-family: texto;
+}
+
+#wrapper{
+    background-color: aliceblue;
+    width: 80%;
+    margin: auto;
+}
+
+/******************** HERO SECTION V1 *********************/
+
+#hero{
+    background-image: url("../images/hero.jpg"); /*pongo foto*/
+    height: 90vh;                                /*dimensiono el alto*/
+    background-repeat: no-repeat;                /*evito la repeticion*/
+    background-size: cover;                      /*la ajusto al despacio disponible*/
+    background-position: center;                 /*para no recortar la figura principal*/
+
+    font-family: titulos;
+    font-size: 3.5rem;                           /*Agrando ya que la fuente es pequeña*/
+    text-align: center;
+    padding-top: 20px;
+}
+
+#titulo{
+        background-color: rgb(255, 255, 255, 0.25);
+        backdrop-filter: blur(5px); /*Le aplica un filtro a lo de atras del texto*/
+        border-radius: 20px;
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        margin-top: 5%;
+}
+
+/******************** HERO SECTION V2 *********************/
+
+#myVideo{
+    /*position: fixed;*/
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#titulo2{
+    position: relative;     /*Titulo al mismo nivel que no dentro del video*/
+    top: -205px;
+    background: rgb(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 96.5%;
+    height: 125px;
+    padding: 20px;
+}
+/******************** HERO SECTION V3 *********************/
+#hero3{
+    background-color: #0099FF;             /*Rectango azul*/
+    height: 40vh;
+    position: relative;
+}
+
+#titulo3{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    /*********TRUCO DEL ALMENDRUCO***********/
+    transform: translate(-50%,-50%);
+
+
+    font-family: titulos;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+
+/******************** HERO SECTION V4 *********************/
+
+#hero4{
+    background-image: url('../images/circle-scatter-haikei.png');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#titulo4{
+    font-size: 3vw;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.499);
+    backdrop-filter: blur(5px);
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/******************* Media Queries ************************/
+
+
+@media only screen and (width<=900px){
+    #wrapper{
+        width: 100%;
+        font-size: 2,5rem;
+    }
+}
+
+@media only screen and (width<=600px){
+    #titulo{
+        width: 80%;
+    }
+}

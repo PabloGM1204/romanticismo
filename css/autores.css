@@ -1,0 +1,66 @@
+/******************************************************/
+/* Web del romanticismo - hoja de estilo de autores   */
+/* Autor: Pablo García Muñoz                          */
+/* Version 1.0 - 24/10/2022                           */
+/******************************************************/
+
+/******************** estilo general ******************/
+
+@font-face {
+    font-family: titulos;
+    src: url('./../fonts/AlexBrush-Regular.ttf');
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: titulos;
+    font-size: 1.2em;
+    /*padding: 4%;*/
+    box-sizing: border-box;/*Para que cuente en el width desde el border hacia dentro*/
+    /*background-color: antiquewhite;*/
+    background-image: url(../images/fondo.jpg);
+}
+
+#wrapper{
+    width: 80%;
+    background-color: white;
+    margin: auto;
+}
+
+h1{
+    text-decoration:underline ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    text-align: center;
+    text-indent: 2em;
+}
+
+#espronceda {
+    width: 20%;
+    float: right;
+    padding: 10px;
+
+}
+
+@media only screen and (width<=900px){
+    #espronceda{width: 50%;}
+}
+
+@media only screen and (width<=600px){
+    #wrapper{ /*El wrapper ocupa toda la pantalla*/
+        width: 100%;
+    }
+
+    #espronceda{ /*solo mantengo el espaciado en el texto*/
+        width: 100%;
+        padding:0 0 15px 0;
+    }
+}
+
+
